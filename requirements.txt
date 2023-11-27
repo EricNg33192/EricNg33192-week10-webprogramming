@@ -1,7 +1,0 @@
-Flask==1.1.2
-Flask-restful==0.3.9
-azure-ai-textanalytics==5.1.0
-azure-cognitiveservices-language-luis==0.7.0
-msrest==0.7.1
-azure-core==1.24.2
-azure-ai-textanalytics==5.1.0
