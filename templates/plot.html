@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Numbers (separated by comma):
+<input type="text" id="numbers" name="numbers" value="1,1,2,3,5"><br>
+<button onclick="submit()">Click</button>
+
+<img id="myImage" src="" style="width:300px">
+
+<script>
+async function submit()
+{
+	let numbers = document.getElementById("numbers").value;
+	let form = new FormData();
+	form.append("numbers", numbers);
+	
+	const response = await fetch('/numbers', {
+		method: 'POST',
+		body: form,
+	});
+	const img = await response.text();
+	
+	document.getElementById('myImage').src = img;
+}
+</script>
+
+</body>
+</html>
