@@ -1,7 +1,7 @@
-from flask import Flask, render_template
-from markupsafe import escape
-
+from flask import Flask
 app = Flask(__name__)
-@app.route('/')
+
+
+@app.route("/")
 def hello():
-    return 'Index Page'
+    return "Index Page."
